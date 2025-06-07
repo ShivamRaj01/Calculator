@@ -1,0 +1,80 @@
+/* Calculator Container */
+#calculator {
+    width: 260px;
+    margin: auto;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 20px 20px 40px #d1d1d1, -20px -20px 40px #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Ensures padding and borders are part of the width */
+}
+
+/* Display Styling */
+#display {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+    text-align: right;
+    box-sizing: border-box; /* Fixes layout overflow issues */
+}
+
+/* Button Container */
+.button_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Buttons Styling */
+.button {
+    padding: 15px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(145deg, #4caf50, #388e3c);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px #aaaaaa, -5px -5px 10px #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Buttons */
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 3px 8px #aaaaaa, -3px -3px 8px #ffffff;
+}
+
+/* Active Effect for Buttons */
+.button:active {
+    background: linear-gradient(145deg, #388e3c, #4caf50);
+    transform: scale(0.95);
+    box-shadow: inset 3px 3px 8px #aaaaaa, inset -3px -3px 8px #ffffff;
+}
+
+/* Special Button Colors */
+.button:nth-child(4n) {
+    background: linear-gradient(145deg, #ff5722, #e64a19);
+}
+
+.button:nth-child(4n):hover {
+    background: linear-gradient(145deg, #e64a19, #ff5722);
+}
+
+.button:last-child {
+    background: linear-gradient(145deg, #2196f3, #1976d2);
+}
+
+.button:last-child:hover {
+    background: linear-gradient(145deg, #1976d2, #2196f3);
+}
